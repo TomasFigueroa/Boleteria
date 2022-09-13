@@ -46,9 +46,15 @@ namespace Frontend
                         +"\n" + "   Cant de Popular Sur: " + ticket.CtdPopularSur 
                         + "\n" + "   Cant de Popular Norte: " + ticket.CtdPopularNorte 
                         + "\n" + "\n " +  "Total a Pagar: $" + ticket.Calcular().ToString());
+
                     comprobar(textpopulars, errorpopulars);
                     comprobar(textpopularn, errorpopularn);
                     comprobar(textplatea, errorplatea);
+
+                    textplatea.Clear();
+                    textpopularn.Clear();
+                    textpopulars.Clear();
+
                 } catch (Exception ex)
                 {
                     
@@ -81,6 +87,7 @@ namespace Frontend
                 {
                     error.Clear();
                 }
+        
             }
         }
     }
