@@ -29,7 +29,7 @@ namespace Backend
 
         public int CtdPopularNorte { get; set; }
 
-        public int Calcular()
+        public int Calcular() //Calculo el valor total
         {
 
             int total = 0;

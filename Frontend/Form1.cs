@@ -24,7 +24,7 @@ namespace Frontend
 
 
             if (textpopulars.Text!= "" || textpopularn.Text!="" || textplatea.Text!=""){
-                try
+                try //manejo de errores
                 {
                     if (textplatea.Text != "")
                     {
@@ -55,7 +55,7 @@ namespace Frontend
                     textpopularn.Clear();
                     textpopulars.Clear();
 
-                } catch (Exception ex)
+                } catch (Exception )
                 {
                     
                     comprobar(textpopulars,errorpopulars);
@@ -67,7 +67,7 @@ namespace Frontend
 
             }
 
-            void comprobar(TextBox tex, ErrorProvider error)
+            void comprobar(TextBox tex, ErrorProvider error)// compruebo si hay un dato no numerico
             {
                 bool com = false;
                 foreach (char caracter in tex.Text)
@@ -79,7 +79,7 @@ namespace Frontend
                 }
                 if (com)
                 {
-                    error.SetError(tex, "Nose acepta datos no numericos");
+                    error.SetError(tex, "No se aceptan datos no numericos");
 
 
                 }
