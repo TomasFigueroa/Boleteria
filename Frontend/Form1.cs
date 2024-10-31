@@ -29,7 +29,6 @@ namespace Frontend
                     if (textplatea.Text != "")
                     {
                         ticket.CtdPlatea = Convert.ToInt32(textplatea.Text);
-
                     }
                     if (textpopularn.Text != "")
                     {
@@ -39,9 +38,6 @@ namespace Frontend
                     {
                         ticket.CtdPopularSur = Convert.ToInt32(textpopulars.Text);
                     }
-                    
-                    
-
                     MessageBox.Show("Usted compro esta cantidad de entradas:"+ "\n" + "   Cant de Plateas: " + ticket.CtdPlatea 
                         +"\n" + "   Cant de Popular Sur: " + ticket.CtdPopularSur 
                         + "\n" + "   Cant de Popular Norte: " + ticket.CtdPopularNorte 
@@ -57,11 +53,9 @@ namespace Frontend
 
                 } catch (Exception )
                 {
-                    
                     comprobar(textpopulars,errorpopulars);
                     comprobar(textpopularn, errorpopularn);
                     comprobar(textplatea, errorplatea);
-
                 }
 
 
